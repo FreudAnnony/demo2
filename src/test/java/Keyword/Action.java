@@ -13,6 +13,9 @@ public class Action {
         this.driver = driver;
     }
 
+    /*
+    /This function is use for waiting for page loading all neccessary attribute of a webpage
+     */
     public static void waitForPageLoad(WebDriver driver) {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));  // Set timeout to 30 seconds
@@ -26,6 +29,9 @@ public class Action {
         });
     }
 
+    /*
+    /This fillInForm is use for scroll to element and fill in text field
+     */
     public void fillInForm(WebElement element, String data){
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
